@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trường THPT Ngũ Hành Sơn - Đà Nẵng | Nâng Tầm Trí Tuệ - Vững Bước Tương Lai</title>
+<!-- Google Fonts: Be Vietnam Pro -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome 6 CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#1e40af',  /* Blue chính */
+              dark: '#1e3a8a',
+              sky: '#3b82f6',   /* Sky xanh tươi */
+              lightSky: '#eff6ff',
+              gold: '#f59e0b',  /* Gold màu vàng năng động */
+              amber: '#d97706'
+            }
+          },
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+          },
+          keyframes: {
+            floatBadge: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0.85' }
+            }
+          },
+          animation: {
+            float: 'floatBadge 4s ease-in-out infinite',
+            pulseSubtle: 'pulseSubtle 2.5s infinite'
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-sky selection:text-white">
+<!-- ================= TOP NOTIFICATION BAR ================= -->
+<div class="bg-gradient-to-r from-brand-dark via-brand-blue to-brand-sky text-white text-xs md:text-sm py-2 px-4 shadow-sm relative z-50" id="top-bar">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+<div class="flex items-center gap-2 text-center sm:text-left">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-brand-gold text-slate-900 animate-pulse">
+<i class="fa-solid fa-bullhorn mr-1 text-[10px]"></i> Mới nhất
+        </span>
+<span class="font-medium tracking-wide">
+          Thông báo Tuyển sinh vào Lớp 10 Năm học 2025 - 2026: Nộp hồ sơ trực tuyến từ 15/05/2025!
+        </span>
+</div>
+<div class="flex items-center gap-4 text-xs font-light">
+<a class="hover:text-brand-gold transition-colors flex items-center gap-1.5" href="tel:02363847293">
+<i class="fa-solid fa-phone text-brand-gold"></i> (0236) 3847.293
+        </a>
+<span class="opacity-40">|</span>
+<a class="hover:text-brand-gold transition-colors flex items-center gap-1.5" href="mailto:thptnguhanhson@danang.gov.vn">
+<i class="fa-solid fa-envelope text-brand-gold"></i> c3nguhanhson@danang.edu.vn
+        </a>
+<span class="hidden md:inline opacity-40">|</span>
+<span class="hidden md:inline-flex items-center gap-1 text-slate-200">
+<i class="fa-solid fa-location-dot text-brand-gold"></i> Ngũ Hành Sơn, TP Đà Nẵng
+        </span>
+</div>
+</div>
+</div>
+<!-- ================= STICKY HEADER & NAVIGATION ================= -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-100 transition-all duration-300" id="main-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Logo & Trường -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-sky flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300">
+<i class="fa-solid fa-graduation-cap text-2xl text-brand-gold"></i>
+</div>
+<div>
+<div class="text-[11px] font-semibold uppercase tracking-wider text-slate-500">Sở GD&amp;ĐT TP. Đà Nẵng</div>
+<div class="text-lg md:text-xl font-extrabold text-brand-blue tracking-tight group-hover:text-brand-sky transition-colors">
+              THPT NGŨ HÀNH SƠN
+            </div>
+<div class="text-[10px] text-slate-400 font-medium">Trí Tuệ - Năng Động - Hội Nhập</div>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-1 font-medium text-slate-700 text-sm">
+<a class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-brand-lightSky transition-all" href="#gioi-thieu">Giới thiệu</a>
+<a class="px-3.5 py-2 rounded-lg text-brand-blue font-semibold hover:bg-brand-lightSky transition-all flex items-center gap-1" href="#tuyen-sinh">
+<span>Tuyển sinh</span>
+<span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-brand-lightSky transition-all" href="#tin-tuc">Tin tức - Sự kiện</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-brand-lightSky transition-all" href="#tra-cuu">Tra cứu học tập</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-brand-lightSky transition-all" href="#hoat-dong">Đoàn thanh niên</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-brand-lightSky transition-all" href="#lien-he">Liên hệ</a>
+</nav>
+<!-- Header Actions: Tra cứu nhanh & Login Modal CTA -->
+<div class="hidden sm:flex items-center gap-3">
+<button class="inline-flex items-center gap-2 px-4 py-2.2 rounded-xl bg-gradient-to-r from-brand-blue to-brand-sky text-white text-sm font-semibold shadow-md shadow-blue-500/25 hover:shadow-lg hover:from-brand-dark hover:to-brand-blue transition-all active:scale-95" onclick="openLoginModal()">
+<i class="fa-solid fa-user-lock text-brand-gold text-xs"></i>
+<span>Cổng Đăng Nhập</span>
+</button>
+</div>
+<!-- Mobile Menu Hamburger Button -->
+<div class="lg:hidden flex items-center gap-2">
+<button class="sm:hidden p-2 text-brand-blue hover:bg-slate-100 rounded-lg" onclick="openLoginModal()" title="Đăng nhập">
+<i class="fa-solid fa-user-circle text-xl"></i>
+</button>
+<button aria-label="Toggle Navigation" class="p-2 rounded-lg text-slate-700 hover:text-brand-blue hover:bg-slate-100 focus:outline-none transition-colors" id="mobile-menu-btn">
+<i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Dropdown Navigation -->
+<div class="hidden lg:hidden border-t border-slate-100 bg-white/98 backdrop-blur-lg px-4 pt-3 pb-6 shadow-xl transition-all" id="mobile-menu">
+<div class="space-y-1 font-medium text-slate-700">
+<a class="block px-3 py-2.5 rounded-lg hover:bg-blue-50 hover:text-brand-blue transition" href="#gioi-thieu" onclick="closeMobileMenu()">Giới thiệu</a>
+<a class="block px-3 py-2.5 rounded-lg bg-blue-50/60 text-brand-blue font-semibold transition flex items-center justify-between" href="#tuyen-sinh" onclick="closeMobileMenu()">
+<span>Tuyển sinh Lớp 10 (2025 - 2026)</span>
+<span class="text-xs bg-red-500 text-white px-2 py-0.5 rounded-full font-bold">HOT</span>
+</a>
+<a class="block px-3 py-2.5 rounded-lg hover:bg-blue-50 hover:text-brand-blue transition" href="#tin-tuc" onclick="closeMobileMenu()">Tin tức &amp; Thông báo</a>
+<a class="block px-3 py-2.5 rounded-lg hover:bg-blue-50 hover:text-brand-blue transition" href="#tra-cuu" onclick="closeMobileMenu()">Tra cứu kết quả học tập</a>
+<a class="block px-3 py-2.5 rounded-lg hover:bg-blue-50 hover:text-brand-blue transition" href="#hoat-dong" onclick="closeMobileMenu()">Đoàn trường &amp; Ngoại khóa</a>
+<a class="block px-3 py-2.5 rounded-lg hover:bg-blue-50 hover:text-brand-blue transition" href="#lien-he" onclick="closeMobileMenu()">Liên hệ &amp; Địa chỉ</a>
+</div>
+<div class="mt-4 pt-4 border-t border-slate-100">
+<button class="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-brand-blue text-white font-semibold shadow-md active:scale-95 transition" onclick="closeMobileMenu(); openLoginModal()">
+<i class="fa-solid fa-right-to-bracket text-brand-gold"></i>
+<span>Đăng nhập Cổng Giáo Vụ &amp; Học Sinh</span>
+</button>
+</div>
+</div>
+</header>
+<!-- ================= HERO SECTION ================= -->
+<section class="relative bg-slate-900 overflow-hidden text-white min-h-[580px] lg:min-h-[640px] flex items-center">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Khuôn viên trường học" class="w-full h-full object-cover object-center opacity-30 transform scale-105 transition-transform duration-1000 ease-out" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-blue/80 to-slate-950/90 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-sky/20 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Hero Copy -->
+<div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-brand-gold text-xs sm:text-sm font-semibold tracking-wide">
+<i class="fa-solid fa-award"></i>
+<span>Trường Chuẩn Quốc Gia - Điểm Sáng Giáo Dục Ngũ Hành Sơn</span>
+</div>
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight sm:leading-none">
+            Nuôi Dưỡng Ước Mơ, <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-brand-gold to-yellow-200">
+              Kiến Tạo Tương Lai
+            </span>
+</h1>
+<p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+            Chào mừng bạn đến với Trường THPT Ngũ Hành Sơn - Môi trường giáo dục năng động, hiện đại và thân thiện tại thành phố Đà Nẵng. Nơi mỗi học sinh được truyền cảm hứng, phát huy tối đa năng lực tư duy sáng tạo và tự tin hội nhập toàn cầu.
+          </p>
+<!-- Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-gold to-amber-500 text-slate-900 font-bold shadow-lg shadow-amber-500/30 hover:brightness-110 active:scale-95 transition-all" href="#tuyen-sinh">
+<i class="fa-solid fa-file-signature text-base"></i>
+<span>Đăng Ký Tuyển Sinh Lớp 10</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold backdrop-blur-md border border-white/25 active:scale-95 transition-all" href="#tra-cuu">
+<i class="fa-solid fa-magnifying-glass text-brand-gold"></i>
+<span>Tra Cứu Điểm Thi / Học Tập</span>
+</a>
+</div>
+<!-- Mini trust badge -->
+<div class="pt-4 flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-300 font-medium">
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-check text-brand-gold"></i> 100% Đạt Chuẩn Sư Phạm
+            </div>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-check text-brand-gold"></i> Cơ sở vật chất thông minh
+            </div>
+</div>
+</div>
+<!-- Right Floating Graphic Cards -->
+<div class="lg:col-span-5 relative hidden lg:block">
+<div class="relative mx-auto w-full max-w-md">
+<!-- Main Hero Image Frame -->
+<div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 shadow-blue-900/50 relative group">
+<img alt="Học sinh THPT Ngũ Hành Sơn" class="w-full h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5 right-5 text-white">
+<span class="text-xs font-semibold px-2.5 py-1 bg-brand-blue/80 rounded-md backdrop-blur-sm">Phong trào &amp; Sáng tạo</span>
+<p class="font-bold text-base mt-1">Môi trường phát triển toàn diện Tri thức - Nhân cách</p>
+</div>
+</div>
+<!-- Floating Badge Top Right -->
+<div class="absolute -top-6 -right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/40 text-slate-800 animate-float">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600 font-bold text-lg">
+<i class="fa-solid fa-trophy"></i>
+</div>
+<div>
+<div class="text-xs text-slate-500 font-semibold">Tỷ lệ Tốt nghiệp</div>
+<div class="text-lg font-black text-brand-blue">99.6% Liên tục</div>
+</div>
+</div>
+</div>
+<!-- Floating Badge Bottom Left -->
+<div class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/40 text-slate-800">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-blue-100 flex items-center justify-center text-brand-blue font-bold text-lg">
+<i class="fa-solid fa-users-viewfinder"></i>
+</div>
+<div>
+<div class="text-xs text-slate-500 font-semibold">CLB Ngoại Khóa</div>
+<div class="text-base font-extrabold text-slate-900">18+ Câu lạc bộ năng nổ</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= STATS COUNTER SECTION ================= -->
+<section class="relative -mt-10 z-20 max-w-6xl mx-auto px-4 sm:px-6" id="stats-section">
+<div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 sm:p-8">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 divide-y-2 sm:divide-y-0 sm:divide-x divide-slate-100">
+<!-- Stat 1 -->
+<div class="text-center pt-2 sm:pt-0">
+<div class="inline-flex p-3 rounded-xl bg-blue-50 text-brand-blue mb-2">
+<i class="fa-solid fa-user-graduate text-2xl"></i>
+</div>
+<div class="text-3xl sm:text-4xl font-black text-brand-blue tracking-tight">
+<span class="counter" data-target="98">0</span><span class="text-brand-gold">%</span>
+</div>
+<p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1 uppercase tracking-wider">Đỗ ĐH &amp; CĐ Tốp Đầu</p>
+</div>
+<!-- Stat 2 -->
+<div class="text-center pt-2 sm:pt-0 sm:pl-4">
+<div class="inline-flex p-3 rounded-xl bg-amber-50 text-brand-gold mb-2">
+<i class="fa-solid fa-children text-2xl"></i>
+</div>
+<div class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight">
+<span class="counter" data-target="1650">0</span><span class="text-brand-sky">+</span>
+</div>
+<p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1 uppercase tracking-wider">Học Sinh Theo Học</p>
+</div>
+<!-- Stat 3 -->
+<div class="text-center pt-2 sm:pt-0 sm:pl-4">
+<div class="inline-flex p-3 rounded-xl bg-emerald-50 text-emerald-600 mb-2">
+<i class="fa-solid fa-chalkboard-user text-2xl"></i>
+</div>
+<div class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight">
+<span class="counter" data-target="95">0</span><span class="text-emerald-500">%</span>
+</div>
+<p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1 uppercase tracking-wider">Giáo Viên Dạy Giỏi / ThS</p>
+</div>
+<!-- Stat 4 -->
+<div class="text-center pt-2 sm:pt-0 sm:pl-4">
+<div class="inline-flex p-3 rounded-xl bg-purple-50 text-purple-600 mb-2">
+<i class="fa-solid fa-calendar-check text-2xl"></i>
+</div>
+<div class="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight">
+<span class="counter" data-target="25">0</span><span class="text-purple-600">+</span>
+</div>
+<p class="text-xs sm:text-sm font-semibold text-slate-600 mt-1 uppercase tracking-wider">Năm Xây Dựng &amp; Phát Triển</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= ABOUT / GIỚI THIỆU SECTION ================= -->
+<section class="py-20 bg-slate-50" id="gioi-thieu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-xs font-bold uppercase tracking-wider text-brand-sky bg-blue-100/60 px-3.5 py-1 rounded-full">
+          Về Chúng Tôi
+        </span>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">
+          Tự Hào Ngôi Trường Mang Tên Danh Thắng Ngũ Hành Sơn
+        </h2>
+<div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+<p class="text-slate-600 mt-4 text-base">
+          Trường THPT Ngũ Hành Sơn tọa lạc tại vị trí trung tâm quận Ngũ Hành Sơn, TP Đà Nẵng. Với bề dày lịch sử và khát vọng không ngừng vươn xa, trường luôn tiên phong trong đổi mới phương pháp giảng dạy và ứng dụng công nghệ.
+        </p>
+</div>
+<!-- Feature Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-slate-100 transition-all group">
+<div class="w-14 h-14 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-brand-blue group-hover:text-white transition-all">
+<i class="fa-solid fa-book-open-reader"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-800 mb-2">Chương Trình Giáo Dục 2018</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+            Phân bổ tổ hợp môn khoa học tự nhiên, khoa học xã hội và định hướng nghề nghiệp thực tiễn. Đẩy mạnh ngoại ngữ (Anh ngữ, tiếng Hàn/Nhật) và STEM/Robotics.
+          </p>
+</div>
+<div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-slate-100 transition-all group">
+<div class="w-14 h-14 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-brand-gold group-hover:text-slate-900 transition-all">
+<i class="fa-solid fa-laptop-code"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-800 mb-2">Cơ Sở Vật Chất Hiện Đại</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+            Phòng học 100% trang bị Smart Tivi/máy chiếu, hệ thống máy lạnh chuẩn mực, phòng thực hành Lý - Hóa - Sinh đạt chuẩn, sân bóng đá cỏ nhân tạo và nhà đa năng khang trang.
+          </p>
+</div>
+<div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-slate-100 transition-all group">
+<div class="w-14 h-14 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+<i class="fa-solid fa-heart-pulse"></i>
+</div>
+<h3 class="text-xl font-bold text-slate-800 mb-2">Phát Triển Kỹ Năng &amp; Thể Chất</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+            Học sinh được trải nghiệm hoạt động thiện nguyện, kỹ năng tranh biện, văn nghệ, thể thao và các dự án vì cộng đồng, giúp các em tự tin và bản lĩnh trước ngưỡng cửa cuộc đời.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= ADMISSIONS (TUYỂN SINH LỚP 10) ================= -->
+<section class="py-20 bg-white border-t border-slate-100" id="tuyen-sinh">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-100 px-3.5 py-1 rounded-full">
+          Tuyển Sinh Năm Học 2025 - 2026
+        </span>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">
+          Thông Tin Tuyển Sinh Vào Lớp 10
+        </h2>
+<div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+<p class="text-slate-600 mt-4 text-base">
+          Cập nhật đầy đủ chỉ tiêu, thời gian nộp hồ sơ, quy định xét tuyển và giải đáp các thắc mắc thường gặp của quý phụ huynh và học sinh.
+        </p>
+</div>
+<!-- 3 Key Admission Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<!-- Card 1 -->
+<div class="rounded-2xl border-2 border-blue-100 p-7 bg-gradient-to-b from-white to-blue-50/30 hover:border-brand-sky transition-all shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-brand-blue uppercase bg-blue-100 px-3 py-1 rounded-full">Chỉ tiêu chính thức</span>
+<i class="fa-solid fa-id-badge text-2xl text-brand-sky"></i>
+</div>
+<h3 class="text-2xl font-black text-slate-900">560 Học Sinh</h3>
+<p class="text-sm text-slate-600 mt-1">Dự kiến chia thành 13 lớp học với các tổ hợp môn:</p>
+<ul class="mt-4 space-y-2.5 text-xs text-slate-700">
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+<span><strong>05 Lớp Tự Nhiên:</strong> Toán, Lý, Hóa, Sinh, Tin học</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+<span><strong>06 Lớp Xã Hội &amp; Ngoại Ngữ:</strong> Văn, Sử, Địa, GD Kinh tế &amp; Pháp luật, Tiếng Anh</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+<span><strong>02 Lớp Công Nghệ - Nghệ Thuật:</strong> Định hướng kỹ thuật, đồ họa &amp; năng khiếu</span>
+</li>
+</ul>
+</div>
+<!-- Card 2 -->
+<div class="rounded-2xl border-2 border-amber-200 p-7 bg-gradient-to-b from-white to-amber-50/40 hover:border-brand-gold transition-all shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 text-amber-200/40 text-8xl pointer-events-none">
+<i class="fa-solid fa-calendar-days"></i>
+</div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-amber-800 uppercase bg-amber-100 px-3 py-1 rounded-full">Mốc thời gian</span>
+<i class="fa-solid fa-clock text-2xl text-brand-gold"></i>
+</div>
+<h3 class="text-2xl font-black text-slate-900">Kỳ Thi &amp; Hồ Sơ</h3>
+<div class="mt-3 space-y-3 text-xs text-slate-700">
+<div class="p-2.5 rounded-lg bg-white border border-amber-100">
+<span class="font-bold text-amber-700 block">15/05 - 25/05/2025:</span>
+              Nộp hồ sơ trực tuyến theo cổng Sở GD&amp;ĐT Đà Nẵng
+            </div>
+<div class="p-2.5 rounded-lg bg-white border border-amber-100">
+<span class="font-bold text-amber-700 block">02/06 - 04/06/2025:</span>
+              Kỳ thi tuyển sinh 3 môn chung: Ngữ Văn, Toán, Tiếng Anh
+            </div>
+<div class="p-2.5 rounded-lg bg-white border border-amber-100">
+<span class="font-bold text-amber-700 block">Trước 20/06/2025:</span>
+              Công bố điểm chuẩn và làm thủ tục nhập học
+            </div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="rounded-2xl border-2 border-emerald-100 p-7 bg-gradient-to-b from-white to-emerald-50/30 hover:border-emerald-400 transition-all shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-emerald-800 uppercase bg-emerald-100 px-3 py-1 rounded-full">Hỗ trợ 24/7</span>
+<i class="fa-solid fa-headset text-2xl text-emerald-600"></i>
+</div>
+<h3 class="text-2xl font-black text-slate-900">Ban Tư Vấn Tuyển Sinh</h3>
+<p class="text-sm text-slate-600 mt-2">
+              Đội ngũ thầy cô luôn sẵn sàng giải đáp về định hướng chọn khối thi, cách thức tính điểm ưu tiên và các chế độ học bổng.
+            </p>
+<div class="mt-4 p-3 bg-white rounded-xl border border-emerald-200 text-xs space-y-1.5">
+<div><strong class="text-slate-800">Hotline:</strong> 0905.123.456 (Thầy Tuấn)</div>
+<div><strong class="text-slate-800">Email:</strong> tuyensinh.nguhanhson@gmail.com</div>
+<div><strong class="text-slate-800">Phòng tư vấn:</strong> Phòng 102 - Tầng 1 Khu Hiệu Bộ</div>
+</div>
+</div>
+<div class="mt-6">
+<a class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold text-xs tracking-wide transition shadow-sm" href="#lien-he">
+<i class="fa-solid fa-comments"></i>
+<span>Gửi câu hỏi tư vấn ngay</span>
+</a>
+</div>
+</div>
+</div>
+<!-- FAQ Accordion -->
+<div class="max-w-3xl mx-auto mt-10">
+<h3 class="text-xl font-bold text-slate-800 mb-6 text-center flex items-center justify-center gap-2">
+<i class="fa-solid fa-circle-question text-brand-sky"></i>
+<span>Hỏi Đáp Thường Gặp Về Tuyển Sinh (FAQ)</span>
+</h3>
+<div class="space-y-3" id="faq-container">
+<!-- FAQ Item 1 -->
+<div class="faq-item border border-slate-200 rounded-xl overflow-hidden bg-slate-50 transition-colors">
+<button class="faq-btn w-full px-5 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-blue transition" onclick="toggleFaq(this)">
+<span>1. Điểm chuẩn đầu vào Lớp 10 THPT Ngũ Hành Sơn các năm gần đây như thế nào?</span>
+<i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+</button>
+<div class="faq-answer hidden px-5 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+              Điểm chuẩn tuyển sinh vào trường dao động ổn định theo từng năm tùy theo mức độ đề thi của Sở GD&amp;ĐT Đà Nẵng. Trong 3 năm gần nhất, điểm trung bình dao động từ 46 - 49.5 điểm (tính hệ số theo quy định kỳ thi tuyển sinh chung). Phụ huynh và học sinh có thể theo dõi chi tiết ở mục Tra cứu.
+            </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item border border-slate-200 rounded-xl overflow-hidden bg-slate-50 transition-colors">
+<button class="faq-btn w-full px-5 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-blue transition" onclick="toggleFaq(this)">
+<span>2. Học sinh ở các quận lân cận (Sơn Trà, Cẩm Lệ, Quảng Nam giáp ranh) có được nộp nguyện vọng vào trường?</span>
+<i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+</button>
+<div class="faq-answer hidden px-5 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+              Trường tuyển sinh theo phân tuyến tuyển sinh chung của Sở GD&amp;ĐT Đà Nẵng. Học sinh có hộ khẩu thường trú hoặc tạm trú hợp lệ trên địa bàn thành phố Đà Nẵng đều có thể đăng ký Nguyện vọng 1 hoặc Nguyện vọng 2 vào trường.
+            </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item border border-slate-200 rounded-xl overflow-hidden bg-slate-50 transition-colors">
+<button class="faq-btn w-full px-5 py-4 text-left font-bold text-slate-800 flex justify-between items-center hover:text-brand-blue transition" onclick="toggleFaq(this)">
+<span>3. Trường có những chính sách học bổng hay hỗ trợ học sinh có hoàn cảnh khó khăn không?</span>
+<i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
+</button>
+<div class="faq-answer hidden px-5 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-white">
+              Nhà trường có Quỹ học bổng "Thắp Sáng Ước Mơ Ngũ Hành Sơn", phối hợp cùng Hội Cựu học sinh và các doanh nghiệp tài trợ trao tặng hàng trăm suất học bổng toàn phần/bán phần mỗi năm cho học sinh vượt khó học giỏi, thủ khoa đầu vào và học sinh đạt giải cao cấp Thành phố/Quốc gia.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= NEWS & ANNOUNCEMENTS SECTION (WITH TABS) ================= -->
+<section class="py-20 bg-slate-50" id="tin-tuc">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+<div>
+<span class="text-xs font-bold uppercase tracking-wider text-brand-blue bg-blue-100 px-3.5 py-1 rounded-full">
+            Tin Tức &amp; Sự Kiện
+          </span>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">
+            Nhịp Sống Dưới Mái Trường Ngũ Hành Sơn
+          </h2>
+</div>
+<!-- News Category Tabs Filter -->
+<div class="mt-6 md:mt-0 flex items-center p-1.5 bg-slate-200/80 rounded-xl text-xs font-bold text-slate-600">
+<button class="news-tab-btn px-4 py-2 rounded-lg bg-white text-brand-blue shadow-sm transition" onclick="filterNews('all', this)">
+            Tất cả
+          </button>
+<button class="news-tab-btn px-4 py-2 rounded-lg hover:text-brand-blue transition" onclick="filterNews('hoc-tap', this)">
+            Học tập &amp; Chuyên môn
+          </button>
+<button class="news-tab-btn px-4 py-2 rounded-lg hover:text-brand-blue transition" onclick="filterNews('doan-the', this)">
+            Đoàn thể &amp; Hoạt động
+          </button>
+</div>
+</div>
+<!-- News Articles Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="news-grid">
+<!-- Post 1: Học tập -->
+<article class="news-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col" data-category="hoc-tap">
+<div class="relative h-48 overflow-hidden">
+<img alt="Lễ tuyên dương học sinh giỏi" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-3 left-3 bg-brand-blue text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+              Học tập
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="text-xs text-slate-400 font-medium mb-2 flex items-center gap-1.5">
+<i class="fa-regular fa-clock"></i> 20/04/2025
+                <span>•</span>
+<span>Ban Chuyên Môn</span>
+</div>
+<h3 class="font-bold text-slate-900 text-lg hover:text-brand-blue transition-colors line-clamp-2">
+                Học sinh THPT Ngũ Hành Sơn gặt hái 18 giải tại Kỳ thi Học sinh giỏi Cấp Thành phố năm học 2024 - 2025
+              </h3>
+<p class="text-slate-600 text-xs mt-2.5 line-clamp-3">
+                Trong đó xuất sắc có 2 Giải Nhất môn Hóa học và Tiếng Anh, khẳng định chất lượng bồi dưỡng mũi nhọn của nhà trường trong giai đoạn mới.
+              </p>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-blue">
+<span class="hover:underline cursor-pointer">Xem chi tiết</span>
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+</article>
+<!-- Post 2: Đoàn thể -->
+<article class="news-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col" data-category="doan-the">
+<div class="relative h-48 overflow-hidden">
+<img alt="Hội trại thanh niên 26/3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-3 left-3 bg-brand-gold text-slate-900 text-[11px] font-bold px-2.5 py-1 rounded-md">
+              Đoàn thể
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="text-xs text-slate-400 font-medium mb-2 flex items-center gap-1.5">
+<i class="fa-regular fa-clock"></i> 26/03/2025
+                <span>•</span>
+<span>Đoàn Trường</span>
+</div>
+<h3 class="font-bold text-slate-900 text-lg hover:text-brand-blue transition-colors line-clamp-2">
+                Sôi nổi Hội trại truyền thống "Khát Vọng Tuổi Trẻ Ngũ Hành Sơn" chào mừng Tháng Thanh Niên
+              </h3>
+<p class="text-slate-600 text-xs mt-2.5 line-clamp-3">
+                Với hơn 1.600 đoàn viên thanh niên tham gia hơn 15 trò chơi dân gian, liên hoan dân vũ, flashmob và đêm hội ẩm thực đặc sắc mang đậm tinh thần Đà Nẵng.
+              </p>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-blue">
+<span class="hover:underline cursor-pointer">Xem chi tiết</span>
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+</article>
+<!-- Post 3: Học tập -->
+<article class="news-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 flex flex-col" data-category="hoc-tap">
+<div class="relative h-48 overflow-hidden">
+<img alt="Chuyển đổi số giáo dục" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<span class="absolute top-3 left-3 bg-brand-blue text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+              Học tập
+            </span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="text-xs text-slate-400 font-medium mb-2 flex items-center gap-1.5">
+<i class="fa-regular fa-clock"></i> 10/03/2025
+                <span>•</span>
+<span>Ban Giám Hiệu</span>
+</div>
+<h3 class="font-bold text-slate-900 text-lg hover:text-brand-blue transition-colors line-clamp-2">
+                Hội thảo "Ứng dụng Trí tuệ Nhân tạo (AI) trong Học tập &amp; Đổi mới Phương pháp Dạy học THPT"
+              </h3>
+<p class="text-slate-600 text-xs mt-2.5 line-clamp-3">
+                Diễn đàn bổ ích giúp thầy cô và các bạn học sinh khối 10, 11, 12 làm quen với các công cụ học tập thông minh có trách nhiệm và hiệu quả cao.
+              </p>
+</div>
+<div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-blue">
+<span class="hover:underline cursor-pointer">Xem chi tiết</span>
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ================= QUICK LOOKUP SECTION (TRA CỨU HỌC TẬP) ================= -->
+<section class="py-20 bg-gradient-to-br from-brand-dark via-brand-blue to-slate-900 text-white relative overflow-hidden" id="tra-cuu">
+<!-- Decorative background elements -->
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-sky/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-gold/15 blur-3xl pointer-events-none"></div>
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="text-xs font-bold uppercase tracking-wider text-brand-gold bg-amber-400/20 px-3.5 py-1 rounded-full border border-amber-400/30">
+          Dịch Vụ Trực Tuyến
+        </span>
+<h2 class="text-3xl sm:text-4xl font-black mt-3">
+          Tra Cứu Kết Quả Học Tập &amp; Tuyển Sinh
+        </h2>
+<p class="text-slate-300 text-sm mt-2 font-light">
+          Hệ thống tra cứu tự động cho Phụ huynh và Học sinh THPT Ngũ Hành Sơn. Nhập mã số học sinh (VD mẫu thử: <span class="text-brand-gold font-mono font-bold cursor-pointer underline" onclick="fillSampleCode('NHS202401')">NHS202401</span> hoặc <span class="text-brand-gold font-mono font-bold cursor-pointer underline" onclick="fillSampleCode('NHS202402')">NHS202402</span>).
+        </p>
+</div>
+<!-- Lookup Form Card -->
+<div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 sm:p-10 shadow-2xl">
+<form class="space-y-4 sm:space-y-0 sm:flex sm:gap-3" id="lookup-form" onsubmit="handleLookup(event)">
+<div class="relative flex-1">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-300">
+<i class="fa-solid fa-id-card"></i>
+</div>
+<input class="w-full pl-11 pr-4 py-3.5 bg-white/15 border border-white/30 rounded-2xl text-white placeholder-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold focus:bg-white/20 transition-all" id="student-code" placeholder="Nhập Mã số học sinh hoặc SBD (VD: NHS202401)" required="" type="text"/>
+</div>
+<div class="w-full sm:w-48">
+<select class="w-full py-3.5 px-3 bg-white/15 border border-white/30 rounded-2xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold transition-all" id="lookup-type">
+<option class="text-slate-900" value="diem-ky">Điểm Học Kỳ II (2024-2025)</option>
+<option class="text-slate-900" value="diem-tuyensinh">Điểm Tuyển sinh Lớp 10</option>
+<option class="text-slate-900" value="ren-luyen">Đánh giá Rèn luyện</option>
+</select>
+</div>
+<button class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-brand-gold to-amber-500 text-slate-950 font-bold rounded-2xl shadow-lg hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-2" type="submit">
+<i class="fa-solid fa-magnifying-glass"></i>
+<span>Tra Cứu</span>
+</button>
+</form>
+<!-- Simulated Result Box -->
+<div class="hidden mt-8 pt-8 border-t border-white/15 transition-all" id="lookup-result">
+<!-- Injected via JavaScript -->
+</div>
+</div>
+</div>
+</section>
+<!-- ================= YOUTH UNION & ACTIVITIES SECTION ================= -->
+<section class="py-20 bg-white" id="hoat-dong">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 space-y-6">
+<span class="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-100 px-3.5 py-1 rounded-full">
+            Đoàn TNCS Hồ Chí Minh
+          </span>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">
+            Nơi Khởi Nguồn Đam Mê &amp; Hoạt Động Tuổi Trẻ
+          </h2>
+<p class="text-slate-600 text-sm leading-relaxed">
+            Đoàn trường THPT Ngũ Hành Sơn là chiếc nôi tôi luyện tinh thần xung kích, gắn kết hàng ngàn học sinh qua các hoạt động thiện nguyện hè, câu lạc bộ học thuật, giải bóng đá học sinh truyền thống và các cuộc thi sáng tạo khoa học kỹ thuật.
+          </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<div class="w-9 h-9 rounded-lg bg-rose-500 text-white flex items-center justify-center font-bold text-sm">
+<i class="fa-solid fa-guitar"></i>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 text-sm">CLB Âm Nhạc &amp; Nghệ Thuật (NHS Melody)</h4>
+<p class="text-xs text-slate-500">Nơi giao lưu thanh nhạc, guitar, piano và nhảy hiện đại</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<div class="w-9 h-9 rounded-lg bg-blue-500 text-white flex items-center justify-center font-bold text-sm">
+<i class="fa-solid fa-robot"></i>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 text-sm">CLB STEM &amp; Sáng Tạo Khoa Học</h4>
+<p class="text-xs text-slate-500">Chế tạo robot, lập trình IoT và nghiên cứu khoa học cấp tỉnh</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+<div class="w-9 h-9 rounded-lg bg-emerald-500 text-white flex items-center justify-center font-bold text-sm">
+<i class="fa-solid fa-hand-holding-heart"></i>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 text-sm">Đội Tình Nguyện Xanh Ngũ Hành Sơn</h4>
+<p class="text-xs text-slate-500">Làm sạch bãi biển Non Nước, thăm Mẹ Việt Nam Anh hùng</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<img alt="Học sinh năng động" class="rounded-2xl shadow-md w-full h-52 object-cover hover:brightness-105 transition" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<img alt="Lớp học tương tác" class="rounded-2xl shadow-md w-full h-64 object-cover hover:brightness-105 transition" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<div class="space-y-4 pt-8">
+<img alt="Hoạt động thể thao" class="rounded-2xl shadow-md w-full h-64 object-cover hover:brightness-105 transition" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<img alt="Thư viện hiện đại" class="rounded-2xl shadow-md w-full h-52 object-cover hover:brightness-105 transition" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CONTACT & MAP SECTION ================= -->
+<section class="py-20 bg-slate-50 border-t border-slate-200" id="lien-he">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs font-bold uppercase tracking-wider text-brand-blue bg-blue-100 px-3.5 py-1 rounded-full">
+          Liên Hệ &amp; Bản Đồ
+        </span>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">
+          Kết Nối Với THPT Ngũ Hành Sơn
+        </h2>
+<p class="text-slate-600 text-sm mt-2">
+          Chúng tôi luôn sẵn sàng lắng nghe và giải đáp mọi ý kiến đóng góp từ Quý phụ huynh và học sinh.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Contact Information & Quick Message Form -->
+<div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-slate-100 space-y-6">
+<h3 class="text-lg font-bold text-slate-900 pb-2 border-b border-slate-100">
+            Thông tin liên hệ trực tiếp
+          </h3>
+<div class="space-y-4 text-sm text-slate-600">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0">
+<i class="fa-solid fa-map-location-dot"></i>
+</div>
+<div>
+<strong class="text-slate-900 block font-semibold">Địa chỉ:</strong>
+<span>Số 172 đường Lê Văn Hiến, Phường Khuê Mỹ, Quận Ngũ Hành Sơn, Thành phố Đà Nẵng</span>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0">
+<i class="fa-solid fa-phone"></i>
+</div>
+<div>
+<strong class="text-slate-900 block font-semibold">Văn phòng trường:</strong>
+<a class="hover:text-brand-blue transition" href="tel:02363847293">(0236) 3847.293</a> - Fax: (0236) 3847.294
+              </div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0">
+<i class="fa-solid fa-envelope"></i>
+</div>
+<div>
+<strong class="text-slate-900 block font-semibold">Hộp thư điện tử:</strong>
+<a class="hover:text-brand-blue transition" href="mailto:c3nguhanhson@danang.edu.vn">c3nguhanhson@danang.edu.vn</a>
+</div>
+</div>
+</div>
+<!-- Quick Feedback Form -->
+<div class="pt-4 border-t border-slate-100">
+<h4 class="text-sm font-bold text-slate-800 mb-3">Gửi Thắc Mắc Nhanh</h4>
+<form class="space-y-3" onsubmit="handleContactSubmit(event)">
+<input class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-brand-blue" placeholder="Họ và tên của bạn" required="" type="text"/>
+<input class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-brand-blue" placeholder="Số điện thoại hoặc Email" required="" type="text"/>
+<textarea class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-brand-blue" placeholder="Nội dung cần hỗ trợ tư vấn..." required="" rows="3"></textarea>
+<button class="w-full py-2.5 bg-brand-blue hover:bg-brand-dark text-white font-semibold text-xs rounded-xl shadow-md transition active:scale-95" type="submit">
+                Gửi Tin Nhắn
+              </button>
+</form>
+</div>
+</div>
+<!-- Google Maps Embed -->
+<div class="lg:col-span-7 bg-white p-3 rounded-3xl shadow-sm border border-slate-100 h-[520px] overflow-hidden flex flex-col">
+<div class="px-4 py-2 flex items-center justify-between text-xs text-slate-500 font-medium">
+<span class="flex items-center gap-1.5"><i class="fa-solid fa-map-pin text-red-500"></i> Bản đồ chỉ dẫn đến trường</span>
+<span>Quận Ngũ Hành Sơn, TP Đà Nẵng</span>
+</div>
+<div class="w-full flex-1 rounded-2xl overflow-hidden mt-1">
+<iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.7709493132644!2d108.24355327579893!3d16.02436854060855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421752b047a275%3A0xe549eb93dcf068ec!2zVHLGsOG7nW5nIFRIUFQgTmfFqSBIw6BuaCBTxqFu!5e0!3m2!1svi!2s!4v1700000000000!5m2!1svi!2s" title="Vị trí Trường THPT Ngũ Hành Sơn Đà Nẵng">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-900 text-slate-400 text-xs py-14 border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<!-- School Col -->
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center text-white">
+<i class="fa-solid fa-graduation-cap text-lg text-brand-gold"></i>
+</div>
+<div>
+<div class="font-extrabold text-sm text-white">THPT NGŨ HÀNH SƠN</div>
+<div class="text-[10px] text-slate-500">TP. Đà Nẵng</div>
+</div>
+</div>
+<p class="leading-relaxed text-slate-400">
+            Nơi khơi dậy tiềm năng, hun đúc nhân cách và nâng bước những thế hệ thanh niên ưu tú của thành phố biển Đà Nẵng.
+          </p>
+<div class="flex items-center gap-3 pt-1">
+<a class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-brand-blue hover:text-white flex items-center justify-center transition" href="#">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+<a class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-red-600 hover:text-white flex items-center justify-center transition" href="#">
+<i class="fa-brands fa-youtube"></i>
+</a>
+<a class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-sky-500 hover:text-white flex items-center justify-center transition" href="#">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="space-y-3">
+<h4 class="font-bold text-white text-sm">Liên Kết Nhanh</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-white transition" href="#gioi-thieu">Về trường chúng tôi</a></li>
+<li><a class="hover:text-white transition" href="#tuyen-sinh">Quy chế tuyển sinh Lớp 10</a></li>
+<li><a class="hover:text-white transition" href="#tra-cuu">Cổng thông tin tra cứu</a></li>
+<li><a class="hover:text-white transition" href="#tin-tuc">Bản tin học đường</a></li>
+<li><a class="hover:text-white transition" href="#hoat-dong">Phong trào thanh niên</a></li>
+</ul>
+</div>
+<!-- Portals -->
+<div class="space-y-3">
+<h4 class="font-bold text-white text-sm">Hệ Thống Giáo Vụ</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-white transition" href="javascript:void(0)" onclick="openLoginModal()">Cổng Giáo viên &amp; Học bạ điện tử</a></li>
+<li><a class="hover:text-white transition" href="javascript:void(0)" onclick="openLoginModal()">Sổ liên lạc điện tử VnEdu</a></li>
+<li><a class="hover:text-white transition" href="javascript:void(0)" onclick="openLoginModal()">Kho học liệu số &amp; Đề thi ôn tập</a></li>
+<li><a class="hover:text-white transition" href="javascript:void(0)" onclick="openLoginModal()">Hòm thư góp ý Ban Giám Hiệu</a></li>
+</ul>
+</div>
+<!-- Working Hours & Legal -->
+<div class="space-y-3">
+<h4 class="font-bold text-white text-sm">Thời Gian Làm Việc</h4>
+<p class="leading-relaxed">
+<strong class="text-slate-300">Thứ Hai - Thứ Bảy:</strong><br/>
+            • Buổi sáng: 07h00 - 11h30<br/>
+            • Buổi chiều: 13h30 - 17h15<br/>
+<strong class="text-slate-300">Chủ Nhật &amp; Ngày lễ:</strong> Nghỉ
+          </p>
+<div class="pt-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-950/60 text-emerald-400 border border-emerald-800 text-[11px]">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Cổng dịch vụ công trực tuyến cấp độ 4
+            </span>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 text-center flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
+<div>
+          © 2025 Trường THPT Ngũ Hành Sơn - Thành phố Đà Nẵng. Bản quyền thuộc về Nhà trường.
+        </div>
+<div class="flex items-center gap-4">
+<a class="hover:underline" href="#">Điều khoản</a>
+<span>•</span>
+<a class="hover:underline" href="#">Chính sách bảo mật</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- ================= INTERACTIVE LOGIN MODAL ================= -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="login-modal">
+<div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 transform scale-95 transition-transform duration-300" id="modal-box">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-4 border-b border-slate-100">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center">
+<i class="fa-solid fa-graduation-cap text-base"></i>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 text-base">Cổng Đăng Nhập</h3>
+<p class="text-[11px] text-slate-500">THPT Ngũ Hành Sơn - Đà Nẵng</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center transition" onclick="closeLoginModal()">
+<i class="fa-solid fa-xmark text-sm"></i>
+</button>
+</div>
+<!-- User Role Selector Tabs -->
+<div class="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-xl mt-5 text-xs font-semibold text-slate-600">
+<button class="role-tab py-2 rounded-lg bg-white text-brand-blue shadow-sm transition" onclick="selectRole('hs', this)" type="button">
+          Học Sinh
+        </button>
+<button class="role-tab py-2 rounded-lg hover:text-slate-900 transition" onclick="selectRole('gv', this)" type="button">
+          Giáo Viên
+        </button>
+<button class="role-tab py-2 rounded-lg hover:text-slate-900 transition" onclick="selectRole('ph', this)" type="button">
+          Phụ Huynh
+        </button>
+</div>
+<!-- Login Form -->
+<form class="mt-5 space-y-4" onsubmit="handleLoginSubmit(event)">
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1" id="login-id-label">Mã học sinh / Số định danh cá nhân:</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+<i class="fa-solid fa-user text-xs"></i>
+</div>
+<input class="w-full pl-9 pr-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-blue" id="login-username" placeholder="Nhập mã học sinh (VD: NHS202401)" required="" type="text"/>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<label class="text-xs font-semibold text-slate-700">Mật khẩu:</label>
+<a class="text-[11px] text-brand-blue hover:underline" href="javascript:void(0)" onclick="alert('Vui lòng liên hệ Văn phòng Đoàn trường hoặc Giáo viên chủ nhiệm để được cấp lại mật khẩu.')">Quên mật khẩu?</a>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+<i class="fa-solid fa-lock text-xs"></i>
+</div>
+<input class="w-full pl-9 pr-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-blue" id="login-password" placeholder="Nhập mật khẩu..." required="" type="password"/>
+</div>
+</div>
+<div class="flex items-center">
+<input class="h-4 w-4 text-brand-blue focus:ring-brand-blue border-slate-300 rounded" id="remember-me" type="checkbox"/>
+<label class="ml-2 block text-xs text-slate-600" for="remember-me">Ghi nhớ đăng nhập trên thiết bị này</label>
+</div>
+<button class="w-full py-3 bg-gradient-to-r from-brand-blue to-brand-sky hover:from-brand-dark hover:to-brand-blue text-white font-bold text-sm rounded-xl shadow-md transition active:scale-95" type="submit">
+          Đăng Nhập Hệ Thống
+        </button>
+</form>
+<!-- Feedback / Alert inside modal -->
+<div class="hidden mt-4 p-3 rounded-xl text-xs text-center" id="login-feedback"></div>
+<div class="mt-5 pt-4 border-t border-slate-100 text-center">
+<p class="text-[11px] text-slate-500">
+          Cần hỗ trợ kỹ thuật? Liên hệ Trung tâm CNTT nhà trường qua hotline: <span class="font-bold text-slate-700">0236.3847.293</span>
+</p>
+</div>
+</div>
+</div>
+<!-- ================= JAVASCRIPT LOGIC ================= -->
+<script>
+    // --- Mobile Menu Toggle ---
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      if (isHidden) {
+        menuIcon.classList.replace('fa-xmark', 'fa-bars');
+      } else {
+        menuIcon.classList.replace('fa-bars', 'fa-xmark');
+      }
+    });
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add('hidden');
+      menuIcon.classList.replace('fa-xmark', 'fa-bars');
+    }
+
+    // --- Stats Counter Animation with Intersection Observer ---
+    let counted = false;
+    const statsSection = document.getElementById('stats-section');
+    const counters = document.querySelectorAll('.counter');
+
+    function runCounters() {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let current = 0;
+        const duration = 1800; // ms
+        const stepTime = 20;
+        const totalSteps = duration / stepTime;
+        const increment = target / totalSteps;
+
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            counter.innerText = target.toLocaleString('vi-VN');
+            clearInterval(timer);
+          } else {
+            counter.innerText = Math.floor(current).toLocaleString('vi-VN');
+          }
+        }, stepTime);
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !counted) {
+          runCounters();
+          counted = true;
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (statsSection) {
+      observer.observe(statsSection);
+    }
+
+    // --- FAQ Accordion Toggle ---
+    function toggleFaq(button) {
+      const answer = button.nextElementSibling;
+      const chevron = button.querySelector('i');
+      const isHidden = answer.classList.contains('hidden');
+
+      // Close all other FAQs
+      document.querySelectorAll('.faq-answer').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.faq-btn i').forEach(el => el.classList.remove('rotate-180'));
+
+      if (isHidden) {
+        answer.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+      }
+    }
+
+    // --- News Tab Filter ---
+    function filterNews(category, btn) {
+      // Toggle button styles
+      document.querySelectorAll('.news-tab-btn').forEach(b => {
+        b.classList.remove('bg-white', 'text-brand-blue', 'shadow-sm');
+        b.classList.add('hover:text-brand-blue');
+      });
+      btn.classList.add('bg-white', 'text-brand-blue', 'shadow-sm');
+      btn.classList.remove('hover:text-brand-blue');
+
+      // Filter articles
+      const articles = document.querySelectorAll('.news-card');
+      articles.forEach(article => {
+        const cat = article.getAttribute('data-category');
+        if (category === 'all' || cat === category) {
+          article.style.display = 'flex';
+          article.classList.add('animate-fadeIn');
+        } else {
+          article.style.display = 'none';
+        }
+      });
+    }
+
+    // --- Simulated Quick Lookup Data & Handler ---
+    const studentDatabase = {
+      'NHS202401': {
+        name: 'Nguyễn Trần Minh Anh',
+        dob: '15/08/2008',
+        className: '10/1 (Chuyên Hóa - Sinh)',
+        gpa: '9.2',
+        rank: 'Xuất sắc',
+        conduct: 'Tốt',
+        status: 'Đã hoàn thành chương trình HKII',
+        details: [
+          { subject: 'Toán học', score: '9.5' },
+          { subject: 'Ngữ văn', score: '8.8' },
+          { subject: 'Tiếng Anh', score: '9.4' },
+          { subject: 'Hóa học', score: '9.8' },
+          { subject: 'Vật lý', score: '9.0' }
+        ]
+      },
+      'NHS202402': {
+        name: 'Lê Hoàng Bảo Ngọc',
+        dob: '22/11/2008',
+        className: '10/3 (Xã Hội & Tiếng Anh)',
+        gpa: '8.7',
+        rank: 'Giỏi',
+        conduct: 'Tốt',
+        status: 'Đạt danh hiệu Học sinh Giỏi cấp Trường',
+        details: [
+          { subject: 'Toán học', score: '8.2' },
+          { subject: 'Ngữ văn', score: '9.0' },
+          { subject: 'Tiếng Anh', score: '9.6' },
+          { subject: 'Lịch sử', score: '8.9' },
+          { subject: 'Địa lý', score: '8.8' }
+        ]
+      }
+    };
+
+    function fillSampleCode(code) {
+      const input = document.getElementById('student-code');
+      input.value = code;
+      input.focus();
+    }
+
+    function handleLookup(e) {
+      e.preventDefault();
+      const code = document.getElementById('student-code').value.trim().toUpperCase();
+      const resultBox = document.getElementById('lookup-result');
+
+      resultBox.classList.remove('hidden');
+
+      if (studentDatabase[code]) {
+        const student = studentDatabase[code];
+        resultBox.innerHTML = `
+          <div class="bg-white text-slate-800 rounded-2xl p-6 shadow-xl border border-slate-100">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-4 gap-2">
+              <div>
+                <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full uppercase">
+                  ${student.status}
+                </span>
+                <h4 class="text-xl font-bold text-slate-900 mt-1">${student.name}</h4>
+                <div class="text-xs text-slate-500 font-medium">Lớp: <span class="text-brand-blue font-bold">${student.className}</span> | Ngày sinh: ${student.dob}</div>
+              </div>
+              <div class="text-left sm:text-right">
+                <div class="text-xs text-slate-400 font-semibold uppercase">Điểm TB Học Kỳ II</div>
+                <div class="text-3xl font-black text-brand-blue">${student.gpa} <span class="text-xs text-emerald-600 font-bold">(${student.rank})</span></div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h5 class="text-xs font-bold text-slate-600 uppercase mb-2">Bảng Điểm Một Số Môn Trọng Điểm:</h5>
+              <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center text-xs">
+                ${student.details.map(d => `
+                  <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-slate-500 text-[11px]">${d.subject}</div>
+                    <div class="font-extrabold text-base text-brand-blue mt-0.5">${d.score}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <div class="mt-4 flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
+              <span>Hạnh kiểm: <strong class="text-slate-800">${student.conduct}</strong></span>
+              <button onclick="window.print()" class="text-brand-blue font-semibold hover:underline flex items-center gap-1">
+                <i class="fa-solid fa-print"></i> In kết quả
+              </button>
+            </div>
+          </div>
+        `;
+      } else {
+        resultBox.innerHTML = `
+          <div class="bg-red-500/20 border border-red-400/40 text-white rounded-2xl p-5 text-center">
+            <i class="fa-solid fa-circle-exclamation text-2xl text-red-300 mb-2"></i>
+            <div class="font-bold text-sm">Không tìm thấy dữ liệu cho mã: "${code}"</div>
+            <p class="text-xs text-slate-300 mt-1">
+              Vui lòng kiểm tra lại mã số học sinh chính xác. Bạn có thể thử mã mẫu: 
+              <span class="underline font-mono text-brand-gold cursor-pointer" onclick="fillSampleCode('NHS202401')">NHS202401</span> hoặc 
+              <span class="underline font-mono text-brand-gold cursor-pointer" onclick="fillSampleCode('NHS202402')">NHS202402</span>.
+            </p>
+          </div>
+        `;
+      }
+    }
+
+    // --- Interactive Modal (Login) ---
+    const loginModal = document.getElementById('login-modal');
+    const modalBox = document.getElementById('modal-box');
+    const loginIdLabel = document.getElementById('login-id-label');
+    const loginUsername = document.getElementById('login-username');
+    const loginFeedback = document.getElementById('login-feedback');
+
+    function openLoginModal() {
+      loginModal.classList.remove('opacity-0', 'pointer-events-none');
+      loginModal.classList.add('opacity-100');
+      modalBox.classList.remove('scale-95');
+      modalBox.classList.add('scale-100');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeLoginModal() {
+      loginModal.classList.remove('opacity-100');
+      loginModal.classList.add('opacity-0', 'pointer-events-none');
+      modalBox.classList.remove('scale-100');
+      modalBox.classList.add('scale-95');
+      document.body.classList.remove('overflow-hidden');
+      loginFeedback.classList.add('hidden');
+    }
+
+    loginModal.addEventListener('click', (e) => {
+      if (e.target === loginModal) {
+        closeLoginModal();
+      }
+    });
+
+    function selectRole(role, btn) {
+      document.querySelectorAll('.role-tab').forEach(b => {
+        b.classList.remove('bg-white', 'text-brand-blue', 'shadow-sm');
+        b.classList.add('hover:text-slate-900');
+      });
+      btn.classList.add('bg-white', 'text-brand-blue', 'shadow-sm');
+      btn.classList.remove('hover:text-slate-900');
+
+      if (role === 'hs') {
+        loginIdLabel.innerText = 'Mã học sinh / Số định danh cá nhân:';
+        loginUsername.placeholder = 'Nhập mã học sinh (VD: NHS202401)';
+      } else if (role === 'gv') {
+        loginIdLabel.innerText = 'Mã Cán bộ Giáo viên / Email ngành:';
+        loginUsername.placeholder = 'Nhập mã GV (VD: GV_NGUHANHSON_01)';
+      } else {
+        loginIdLabel.innerText = 'Số điện thoại đăng ký sổ liên lạc:';
+        loginUsername.placeholder = 'Nhập số điện thoại Phụ huynh';
+      }
+    }
+
+    function handleLoginSubmit(e) {
+      e.preventDefault();
+      const user = loginUsername.value.trim();
+      loginFeedback.classList.remove('hidden');
+      loginFeedback.className = 'mt-4 p-3 rounded-xl text-xs text-center bg-emerald-50 text-emerald-800 border border-emerald-200';
+      loginFeedback.innerHTML = `
+        <i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i>
+        Đăng nhập thành công tài khoản <strong>${user}</strong>. Đang kết nối vào hệ thống cơ sở dữ liệu trường...
+      `;
+      setTimeout(() => {
+        closeLoginModal();
+      }, 1500);
+    }
+
+    // --- Feedback Submit Handler ---
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      alert('Cảm ơn Quý phụ huynh / Học sinh đã liên hệ! Thông tin đã được gửi đến Ban Tiếp công dân trường THPT Ngũ Hành Sơn. Chúng tôi sẽ phản hồi trong vòng 24 giờ làm việc.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
